@@ -1,4 +1,4 @@
-cat > README.md <<'EOF'
+
 # Amazon Fine Food Reviews: Data Science and Statistical Analysis
 
 A reproducible analysis of the Stanford SNAP Amazon Fine Food Reviews dataset, studying review helpfulness, rating extremity, review length, and the predictive value of review text.
