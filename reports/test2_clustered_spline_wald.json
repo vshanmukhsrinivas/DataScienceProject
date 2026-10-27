@@ -1,0 +1,25 @@
+{
+  "analysis": "Test 2 sensitivity: product-clustered spline Wald test",
+  "dataset": "data/splits/exploration.csv.gz",
+  "n_reviews": 239593,
+  "n_products": 39522,
+  "hypotheses": {
+    "H0": "All four spline basis coefficients equal zero",
+    "H1": "At least one spline basis coefficient is nonzero"
+  },
+  "alpha": 0.05,
+  "method": "Joint Wald test using product-clustered covariance from a grouped-binomial GLM",
+  "spline_terms_tested": [
+    "bs(LogReviewLength_c, df=4, degree=3, include_intercept=False)[0]",
+    "bs(LogReviewLength_c, df=4, degree=3, include_intercept=False)[1]",
+    "bs(LogReviewLength_c, df=4, degree=3, include_intercept=False)[2]",
+    "bs(LogReviewLength_c, df=4, degree=3, include_intercept=False)[3]"
+  ],
+  "test_statistic": 1707.7654890227254,
+  "degrees_of_freedom": 4,
+  "p_value": 0.0,
+  "reference_distribution": "Asymptotic chi-square",
+  "decision": "Reject H0",
+  "converged": true,
+  "caution": "This robust Wald test assesses whether the spline terms jointly contribute beyond the linear effect. It does not prove superior out-of-sample prediction. Cluster-robust inference remains asymptotic, and the model may still have misspecification or overdispersion concerns."
+}

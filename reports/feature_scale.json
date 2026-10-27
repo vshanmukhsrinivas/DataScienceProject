@@ -1,0 +1,20 @@
+{
+  "dataset": "exploration",
+  "n_samples": 454951,
+  "structured_feature_count": 5,
+  "tfidf_feature_count": 20000,
+  "total_feature_count": 20005,
+  "instances_times_attributes": 9101294755,
+  "three_million_requirement_met": true,
+  "stored_nonzero_entries": 20419898,
+  "matrix_density": 0.0022436256103871236,
+  "vectorizer_settings": {
+    "max_features": 20000,
+    "min_df": 5,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "stop_words": "english"
+  }
+}

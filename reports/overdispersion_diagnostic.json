@@ -1,0 +1,32 @@
+{
+  "purpose": "Diagnostic sensitivity check only; not a replacement for product-clustered primary inference.",
+  "dispersion_ratio": 2.1196066734241734,
+  "standard_error_inflation_factor": 1.4558869026899628,
+  "results": [
+    {
+      "test": "Test 1: rating extremity",
+      "coefficient": 0.34937724420782773,
+      "cluster_robust_se": 0.013086879350552562,
+      "z_statistic": 26.696757481230705,
+      "one_sided_p": 2.56651963067222e-157,
+      "dispersion_ratio_from_test1": 2.1196066734241734,
+      "diagnostic_inflation_factor": 1.4558869026899628,
+      "diagnostic_inflated_se": 0.0190530162435532,
+      "diagnostic_z_statistic": 18.337109449851194,
+      "diagnostic_one_sided_p": 2.0923187911686462e-75
+    },
+    {
+      "test": "Test 2: review length",
+      "coefficient": 0.4507955303840245,
+      "cluster_robust_se": 0.014683090856363814,
+      "z_statistic": 30.701678195272127,
+      "one_sided_p": 2.7027730244365252e-207,
+      "dispersion_ratio_from_test1": null,
+      "diagnostic_inflation_factor": 1.4558869026899628,
+      "diagnostic_inflated_se": 0.021376919668786826,
+      "diagnostic_z_statistic": 21.087955485104175,
+      "diagnostic_one_sided_p": 5.13004361424395e-99
+    }
+  ],
+  "warning": "Multiplying already cluster-robust standard errors by sqrt(Pearson dispersion) may double-count variability. Interpret these values as a stress test, not corrected p-values or definitive inference."
+}

@@ -1,0 +1,27 @@
+{
+  "analysis": "Test 2 sensitivity: review-length nonlinearity",
+  "dataset": "data/splits/exploration.csv.gz",
+  "n_reviews": 239593,
+  "n_products": 39522,
+  "linear_model": {
+    "description": "Linear effect of log review length",
+    "log_likelihood": -330327.02714297606,
+    "aic": 660664.0542859521,
+    "review_length_coefficient": 0.4507955303840245,
+    "review_length_cluster_robust_se": 0.014683090856363814
+  },
+  "spline_model": {
+    "description": "Cubic regression spline with 4 basis degrees of freedom",
+    "log_likelihood": -329496.2471511492,
+    "aic": 659008.4943022984,
+    "converged": true
+  },
+  "model_comparison": {
+    "likelihood_ratio_statistic": 1661.5599836537149,
+    "degrees_of_freedom_difference": 3,
+    "likelihood_ratio_p_value": 0.0,
+    "aic_difference_linear_minus_spline": 1655.5599836537149,
+    "interpretation": "Positive AIC difference favors the spline model. The likelihood-ratio test compares the nested likelihoods under standard binomial assumptions."
+  },
+  "caution": "The likelihood-ratio p-value is not product-cluster robust and relies on binomial likelihood assumptions. Earlier diagnostics showed a Pearson dispersion ratio around 2.12. Treat this as a diagnostic comparison, not definitive evidence of nonlinearity. If the spline is favored, inspect its predicted curve and consider a product-aware or robust follow-up comparison."
+}

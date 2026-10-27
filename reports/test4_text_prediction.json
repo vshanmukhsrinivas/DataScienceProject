@@ -1,0 +1,42 @@
+{
+  "analysis": "Test 4: TF-IDF text prediction comparison",
+  "exploration_path": "data/splits/exploration.csv.gz",
+  "confirmation_path": "data/splits/confirmation.csv.gz",
+  "target": "HelpfulnessNumerator / HelpfulnessDenominator for valid positive-denominator vote records",
+  "structured_features": [
+    "Score",
+    "ReviewLengthChars",
+    "SummaryLengthChars",
+    "ReviewYear"
+  ],
+  "baseline_model": "Ridge regression, alpha=1.0",
+  "text_model": "Ridge regression, alpha=1.0, structured features plus TF-IDF unigrams and bigrams",
+  "tfidf_fit_on_exploration_only": true,
+  "max_tfidf_features": 20000,
+  "alpha": 0.05,
+  "practical_mae_reduction_threshold": 0.01,
+  "n_exploration_reviews": 239569,
+  "n_confirmation_reviews": 58726,
+  "n_confirmation_products": 9794,
+  "baseline_mae": 0.24870485223178884,
+  "text_model_mae": 0.21867077892861078,
+  "mae_reduction_baseline_minus_text": 0.03003407330317806,
+  "relative_mae_reduction": 0.12076191129229275,
+  "bootstrap": {
+    "mean_mae_reduction": 0.03003407330317807,
+    "ci_95": [
+      0.026201058934208467,
+      0.03404142766470832
+    ],
+    "one_sided_bootstrap_p_value": 0.0004997501249375312,
+    "bootstrap_replicates": 2000,
+    "unique_products": 9794,
+    "seed": 42,
+    "method": "Product-cluster bootstrap; resample products with replacement and retain all evaluated reviews per draw."
+  },
+  "reject_h0_at_0_05": true,
+  "practical_threshold_reached_by_point_estimate": true,
+  "ci_supports_positive_improvement": true,
+  "ci_supports_improvement_of_at_least_0_01": true,
+  "interpretation_note": "Positive MAE reduction favors the text-enhanced model. The bootstrap p-value is an empirical one-sided tail estimate, not an exact test. The confidence interval describes uncertainty in the review-weighted mean paired MAE reduction under product-level resampling. The target is a noisy review-level helpfulness proportion, and the analysis is predictive rather than causal."
+}

@@ -1,0 +1,26 @@
+{
+  "source_file": "/mnt/data/finefoods.txt.gz",
+  "output_file": "/mnt/data/amazon_finefoods_parser/finefoods_parsed.csv.gz",
+  "note": "Format conversion and validation only; no intentional row filtering or imputation.",
+  "records_written": 568454,
+  "records_with_malformed_lines": 7,
+  "records_with_repeated_known_fields": 0,
+  "unknown_field_counts": {},
+  "missing_required_field_counts": {},
+  "missing_optional_field_counts": {},
+  "helpfulness_parse_failures": 0,
+  "invalid_helpfulness_count": 0,
+  "helpfulness_numerator_gt_denominator": 2,
+  "score_parse_failures": 0,
+  "score_outside_expected_1_to_5": 0,
+  "time_parse_failures": 0,
+  "malformed_examples": [
+    "88 years old. ...",
+    "...creative powers b...",
+    "School Princi...",
+    "School Princi...",
+    "I am a voracious reader/li..."
+  ],
+  "repeated_field_examples": [],
+  "output_size_bytes": 122502496
+}

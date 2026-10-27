@@ -1,0 +1,61 @@
+{
+  "rows": 568173,
+  "numeric_summaries": {
+    "ReviewLengthChars": {
+      "count": 568173,
+      "min": 12.0,
+      "median": 301.0,
+      "p95": 1201.0,
+      "p99": 2164.0,
+      "max": 21409.0
+    },
+    "SummaryLengthChars": {
+      "count": 568173,
+      "min": 0.0,
+      "median": 20.0,
+      "p95": 51.0,
+      "p99": 68.0,
+      "max": 128.0
+    },
+    "HelpfulnessDenominator": {
+      "count": 568173,
+      "min": 0.0,
+      "median": 1.0,
+      "p95": 9.0,
+      "p99": 23.0,
+      "max": 923.0
+    },
+    "HelpfulnessNumerator": {
+      "count": 568173,
+      "min": 0.0,
+      "median": 0.0,
+      "p95": 7.0,
+      "p99": 19.0,
+      "max": 866.0
+    }
+  },
+  "review_length_outliers": {
+    "ReviewLengthChars": {
+      "q1": 179.0,
+      "q3": 527.0,
+      "iqr": 348.0,
+      "upper_iqr_threshold": 1049.0,
+      "above_upper_threshold": 38773,
+      "policy": "Flag for investigation; do not automatically remove."
+    },
+    "SummaryLengthChars": {
+      "q1": 13.0,
+      "q3": 30.0,
+      "iqr": 17.0,
+      "upper_iqr_threshold": 55.5,
+      "above_upper_threshold": 18433,
+      "policy": "Flag for investigation; do not automatically remove."
+    }
+  },
+  "valid_vote_checks": {
+    "scores_outside_1_to_5": 0,
+    "negative_helpful_votes": 0,
+    "negative_total_votes": 0,
+    "numerator_exceeds_denominator": 2
+  }
+}

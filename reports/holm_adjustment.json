@@ -1,0 +1,40 @@
+{
+  "analysis": "Holm correction for explanatory Tests 1-3",
+  "method": "Holm step-down procedure",
+  "familywise_alpha": 0.05,
+  "number_of_tests": 3,
+  "p_value_policy": "Product-clustered inference p-values: one-sided for Tests 1-2 and two-sided for Test 3.",
+  "results": [
+    {
+      "id": "test1",
+      "label": "Test 1: rating extremity",
+      "raw_p_value": 2.56651963067222e-157,
+      "source": "test1_rating_extremity.json",
+      "inference": "Product-clustered asymptotic z-test, one-sided",
+      "holm_adjusted_p_value": 5.13303926134444e-157,
+      "familywise_alpha": 0.05,
+      "decision_after_holm": "Reject H0"
+    },
+    {
+      "id": "test2",
+      "label": "Test 2: review length",
+      "raw_p_value": 2.7027730244365252e-207,
+      "source": "test2_review_length.json",
+      "inference": "Product-clustered asymptotic z-test, one-sided",
+      "holm_adjusted_p_value": 8.108319073309576e-207,
+      "familywise_alpha": 0.05,
+      "decision_after_holm": "Reject H0"
+    },
+    {
+      "id": "test3",
+      "label": "Test 3: summary length",
+      "raw_p_value": 0.001085347344969828,
+      "source": "test3_summary_length.json",
+      "inference": "Product-clustered asymptotic Wald chi-square test, two-sided",
+      "holm_adjusted_p_value": 0.001085347344969828,
+      "familywise_alpha": 0.05,
+      "decision_after_holm": "Reject H0"
+    }
+  ],
+  "caution": "The adjustment controls family-wise error under arbitrary dependence when the input p-values are valid. Product clustering and asymptotic inference assumptions still require consideration."
+}

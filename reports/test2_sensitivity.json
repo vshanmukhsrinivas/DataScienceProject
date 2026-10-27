@@ -1,0 +1,32 @@
+{
+  "analysis": "Test 2 sensitivity: product-grouped GEE",
+  "dataset": "data/splits/exploration.csv.gz",
+  "n_reviews": 239593,
+  "n_products": 39522,
+  "method": "Binomial GEE, independence working correlation, vote-count weights, product-grouped robust covariance",
+  "hypotheses": {
+    "H0": "beta_LogReviewLength = 0",
+    "H1": "beta_LogReviewLength > 0"
+  },
+  "alpha": 0.05,
+  "coefficient": 0.45079553038402387,
+  "robust_standard_error": 0.014682782530323553,
+  "z_statistic": 30.702322904600702,
+  "p_value_one_sided": 2.6497451651274008e-207,
+  "coefficient_95_ci": [
+    0.4220178054317558,
+    0.4795732553362919
+  ],
+  "review_length_q1_chars": 196.0,
+  "review_length_q3_chars": 590.0,
+  "log_length_iqr": 1.09861228866811,
+  "odds_ratio_per_log_unit": 1.5695603218847483,
+  "odds_ratio_across_length_iqr": 1.6409076097858775,
+  "odds_ratio_across_length_iqr_95_ci": [
+    1.5898408980153083,
+    1.6936146171698716
+  ],
+  "decision": "Reject H0",
+  "converged": true,
+  "caution": "This sensitivity model uses the same observations and predictors as the primary analysis. Similar estimates support stability across specifications but do not independently validate the model or eliminate all overdispersion concerns."
+}

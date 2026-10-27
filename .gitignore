@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated high-dimensional feature matrices and fitted vectorizers
+data/processed/*.npz
+data/processed/*.joblib
+
+# Raw and intermediate datasets can be large; include only if intentionally approved
+data/raw/
+data/processed/*.csv
+data/processed/*.csv.gz
+data/splits/
+
+# LaTeX temporary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.out

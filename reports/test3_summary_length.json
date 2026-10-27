@@ -1,0 +1,46 @@
+{
+  "analysis": "Test 3: additional explanatory value of summary length",
+  "dataset": "data/splits/exploration.csv.gz",
+  "n_reviews": 239593,
+  "n_products": 39522,
+  "total_helpful_votes": 802496,
+  "total_unhelpful_votes": 223816,
+  "alpha": 0.05,
+  "hypotheses": {
+    "H0": "Summary-length coefficient equals zero",
+    "H1": "Summary-length coefficient differs from zero"
+  },
+  "primary_planned_method": "Likelihood-ratio test comparing nested grouped-binomial GLMs",
+  "likelihood_ratio_statistic": 96.4239413139876,
+  "likelihood_ratio_degrees_of_freedom": 1,
+  "likelihood_ratio_p_value": 9.273891270789075e-23,
+  "baseline_deviance": 532733.7889736849,
+  "extended_deviance": 532637.3650323708,
+  "relative_deviance_reduction": 0.00018099835848569952,
+  "practical_deviance_reduction_threshold": 0.01,
+  "practical_threshold_reached": false,
+  "robust_sensitivity": {
+    "method": "Product-clustered Wald test using extended-model covariance",
+    "coefficient_per_character": -0.0016710250410562676,
+    "cluster_robust_standard_error": 0.0005114212357250099,
+    "z_statistic": -3.2674142650477935,
+    "wald_chi_square_statistic": 10.675995979437813,
+    "degrees_of_freedom": 1,
+    "p_value": 0.001085347344969828,
+    "coefficient_95_ci": [
+      -0.0026733922440062563,
+      -0.0006686578381062788
+    ],
+    "odds_ratio_per_10_character_increase": 0.9834285913877046,
+    "odds_ratio_per_10_character_increase_95_ci": [
+      0.9736202655671338,
+      0.9933357270408197
+    ],
+    "reference_distribution": "Asymptotic chi-square for Wald statistic"
+  },
+  "convergence": {
+    "baseline": true,
+    "extended": true
+  },
+  "caution": "The likelihood-ratio test uses the conventional binomial likelihood and is not cluster robust. The product-clustered Wald test is the robust sensitivity analysis. Both use asymptotic reference distributions. The 1% deviance reduction is a proposed practical benchmark, not a universal standard. A nonzero coefficient does not establish causation."
+}

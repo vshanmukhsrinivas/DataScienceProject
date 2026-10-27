@@ -1,0 +1,222 @@
+{
+  "dataset": "data/splits/exploration.csv.gz",
+  "rows": 454951,
+  "unique_products": 59406,
+  "valid_helpfulness_reviews": 239593,
+  "invalid_helpfulness_records": 2,
+  "zero_vote_reviews": 215356,
+  "statistics": {
+    "summary_length": {
+      "median": 20.0,
+      "p95": 51.0,
+      "p99": 68.0,
+      "max": 128.0
+    },
+    "review_length_by_rating": [
+      {
+        "Score": 1.0,
+        "count": 41923,
+        "median": 336.0,
+        "mean": 474.9054
+      },
+      {
+        "Score": 2.0,
+        "count": 23802,
+        "median": 358.0,
+        "mean": 489.9858
+      },
+      {
+        "Score": 3.0,
+        "count": 33953,
+        "median": 374.0,
+        "mean": 520.5579
+      },
+      {
+        "Score": 4.0,
+        "count": 64339,
+        "median": 346.0,
+        "mean": 496.2997
+      },
+      {
+        "Score": 5.0,
+        "count": 290934,
+        "median": 278.0,
+        "mean": 403.8813
+      }
+    ],
+    "review_counts_by_year": {
+      "2003": 104,
+      "2004": 418,
+      "2005": 1014,
+      "2006": 5318,
+      "2007": 18116,
+      "2008": 27425,
+      "2009": 45124,
+      "2010": 68993,
+      "2011": 130679,
+      "2012": 157673
+    },
+    "helpfulness_by_vote_count": [
+      {
+        "VoteBin": "1",
+        "reviews": 90397,
+        "mean_rate": 0.8008119738486896,
+        "median_rate": 1.0
+      },
+      {
+        "VoteBin": "2",
+        "reviews": 49165,
+        "mean_rate": 0.7676294111664802,
+        "median_rate": 1.0
+      },
+      {
+        "VoteBin": "3\u20134",
+        "reviews": 45587,
+        "mean_rate": 0.7674666023208371,
+        "median_rate": 1.0
+      },
+      {
+        "VoteBin": "5\u20139",
+        "reviews": 34099,
+        "mean_rate": 0.7523897619303642,
+        "median_rate": 0.8333333333333334
+      },
+      {
+        "VoteBin": "10\u201319",
+        "reviews": 13907,
+        "mean_rate": 0.7463653865282938,
+        "median_rate": 0.8888888888888888
+      },
+      {
+        "VoteBin": "20+",
+        "reviews": 6438,
+        "mean_rate": 0.7922316904344784,
+        "median_rate": 0.9142857142857143
+      }
+    ],
+    "vote_weighted_helpfulness_by_rating": [
+      {
+        "Score": 1,
+        "helpful": 115746,
+        "unhelpful": 90054,
+        "total_votes": 205800,
+        "helpful_vote_fraction": 0.5624198250728863
+      },
+      {
+        "Score": 2,
+        "helpful": 45348,
+        "unhelpful": 30382,
+        "total_votes": 75730,
+        "helpful_vote_fraction": 0.5988115674105374
+      },
+      {
+        "Score": 3,
+        "helpful": 58014,
+        "unhelpful": 26364,
+        "total_votes": 84378,
+        "helpful_vote_fraction": 0.6875488871506791
+      },
+      {
+        "Score": 4,
+        "helpful": 89437,
+        "unhelpful": 17946,
+        "total_votes": 107383,
+        "helpful_vote_fraction": 0.8328785748209679
+      },
+      {
+        "Score": 5,
+        "helpful": 493951,
+        "unhelpful": 59070,
+        "total_votes": 553021,
+        "helpful_vote_fraction": 0.8931866963460701
+      }
+    ],
+    "helpfulness_by_summary_length": [
+      {
+        "LengthBin": "0",
+        "reviews": 24,
+        "mean_rate": 0.08159722222222222,
+        "median_rate": 0.041666666666666664
+      },
+      {
+        "LengthBin": "1\u201310",
+        "reviews": 32645,
+        "mean_rate": 0.7592664335792227,
+        "median_rate": 1.0
+      },
+      {
+        "LengthBin": "11\u201320",
+        "reviews": 82709,
+        "mean_rate": 0.7794954588925996,
+        "median_rate": 1.0
+      },
+      {
+        "LengthBin": "21\u201330",
+        "reviews": 59742,
+        "mean_rate": 0.7840512143360984,
+        "median_rate": 1.0
+      },
+      {
+        "LengthBin": "31\u201350",
+        "reviews": 50606,
+        "mean_rate": 0.7805616563675994,
+        "median_rate": 1.0
+      },
+      {
+        "LengthBin": "51\u201375",
+        "reviews": 12299,
+        "mean_rate": 0.7700062859669937,
+        "median_rate": 1.0
+      },
+      {
+        "LengthBin": "76+",
+        "reviews": 1568,
+        "mean_rate": 0.7539097183294501,
+        "median_rate": 1.0
+      }
+    ],
+    "reviews_per_product": {
+      "products": 59406,
+      "median": 2.0,
+      "p95": 26.0,
+      "p99": 112.0,
+      "max": 913
+    },
+    "spearman_correlations": {
+      "Score": {
+        "Score": 1.0,
+        "ReviewLengthChars": -0.11989683185679448,
+        "SummaryLengthChars": -0.0712850988167632,
+        "ReviewYear": -0.05469276813954919
+      },
+      "ReviewLengthChars": {
+        "Score": -0.11989683185679448,
+        "ReviewLengthChars": 1.0,
+        "SummaryLengthChars": 0.3230071040117298,
+        "ReviewYear": 0.043741311062377664
+      },
+      "SummaryLengthChars": {
+        "Score": -0.0712850988167632,
+        "ReviewLengthChars": 0.3230071040117298,
+        "SummaryLengthChars": 1.0,
+        "ReviewYear": -0.021478316339530127
+      },
+      "ReviewYear": {
+        "Score": -0.05469276813954919,
+        "ReviewLengthChars": 0.043741311062377664,
+        "SummaryLengthChars": -0.021478316339530127,
+        "ReviewYear": 1.0
+      }
+    }
+  },
+  "figure_captions": {
+    "eda_07_summary_length_distribution.png": "Summary length has a median of 20 characters and a 95th percentile of 51; summaries are generally much shorter than the review bodies.",
+    "eda_08_review_length_by_rating.png": "Median review length ranges from 278 to 374 characters across ratings; differences suggest review length may vary with rating.",
+    "eda_09_review_activity_by_year.png": "Review volume varies across the observed years, from 104 to 157,673 reviews among years with at least 100 records; sparse years are omitted.",
+    "eda_10_helpfulness_by_vote_count.png": "Observed mean helpfulness rates differ across vote-count groups; vote volume may affect estimate precision, so group sizes and vote counts must be considered in interpretation.",
+    "eda_11_vote_weighted_helpfulness.png": "Vote-weighted helpfulness summarizes individual votes, whereas the earlier plot averages review-level rates; these answer different questions because reviews receive different vote counts.",
+    "eda_12_helpfulness_by_summary_length.png": "Mean helpfulness varies across summary-length groups; this descriptive pattern motivates testing whether summary length adds information beyond review length and rating.",
+    "eda_13_reviews_per_product.png": "The median product has 2 reviews, while the 99th percentile is 112; review counts are concentrated unevenly across products.",
+    "eda_14_structured_feature_correlations.png": "Structured features show varying degrees of monotonic association; correlation helps diagnose redundancy but does not imply causation."
+  }
+}

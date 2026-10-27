@@ -1,0 +1,30 @@
+{
+  "stage": "before_cleaning",
+  "rows": 568454,
+  "columns": 14,
+  "missing_values": {
+    "ProductId": 0,
+    "UserId": 0,
+    "ProfileName": 26,
+    "HelpfulnessRaw": 0,
+    "HelpfulnessNumerator": 0,
+    "HelpfulnessDenominator": 0,
+    "ScoreRaw": 0,
+    "Score": 0,
+    "TimeRaw": 0,
+    "ReviewDateUTC": 0,
+    "Summary": 27,
+    "Text": 0,
+    "ReviewLengthChars": 0,
+    "SummaryLengthChars": 0
+  },
+  "exact_duplicate_rows_beyond_first": 281,
+  "rows_participating_in_exact_duplicates": 506,
+  "invalid_helpfulness_records": 2,
+  "zero_helpfulness_denominator": 270052,
+  "empty_or_whitespace_only": {
+    "ProfileName": 26,
+    "Summary": 27,
+    "Text": 0
+  }
+}

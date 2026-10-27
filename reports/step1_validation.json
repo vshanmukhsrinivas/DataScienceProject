@@ -1,0 +1,18 @@
+{
+  "input_file": "data/raw/finefoods.txt",
+  "output_file": "data/processed/finefoods_parsed.csv.gz",
+  "records_written": 568454,
+  "continuation_lines_attached": 7,
+  "orphan_lines": 0,
+  "orphan_examples": [],
+  "repeated_fields": {},
+  "missing_required_fields": {},
+  "missing_optional_fields": {},
+  "helpfulness_parse_failures": 0,
+  "negative_helpfulness_counts": 0,
+  "numerator_gt_denominator": 2,
+  "score_parse_failures": 0,
+  "unexpected_scores": 0,
+  "time_parse_failures": 0,
+  "note": "Parsing only; no intentional row filtering or imputation."
+}

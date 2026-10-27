@@ -1,0 +1,106 @@
+{
+  "dataset": "data/splits/exploration.csv.gz",
+  "rows": 454951,
+  "unique_products": 59406,
+  "valid_helpfulness_rate_reviews": 239593,
+  "zero_vote_reviews": 215356,
+  "invalid_helpfulness_records": 2,
+  "rating_counts": {
+    "1": 41923,
+    "2": 23802,
+    "3": 33953,
+    "4": 64339,
+    "5": 290934
+  },
+  "helpfulness_by_rating": {
+    "1": {
+      "review_count": 32101,
+      "mean_rate": 0.5397243640929628,
+      "median_rate": 0.5,
+      "ci_low_approx": 0.5356353113058845,
+      "ci_high_approx": 0.543813416880041
+    },
+    "2": {
+      "review_count": 15360,
+      "mean_rate": 0.565871934187749,
+      "median_rate": 0.6,
+      "ci_low_approx": 0.5596978296647153,
+      "ci_high_approx": 0.5720460387107826
+    },
+    "3": {
+      "review_count": 19418,
+      "mean_rate": 0.6262419764929357,
+      "median_rate": 0.75,
+      "ci_low_approx": 0.6207013896479473,
+      "ci_high_approx": 0.631782563337924
+    },
+    "4": {
+      "review_count": 30871,
+      "mean_rate": 0.7919932495113365,
+      "median_rate": 1.0,
+      "ci_low_approx": 0.7881393397491893,
+      "ci_high_approx": 0.7958471592734838
+    },
+    "5": {
+      "review_count": 141843,
+      "mean_rate": 0.8715717696287679,
+      "median_rate": 1.0,
+      "ci_low_approx": 0.8701282724238428,
+      "ci_high_approx": 0.873015266833693
+    }
+  },
+  "review_length": {
+    "median": 302.0,
+    "p95": 1203.0,
+    "p99": 2174.0,
+    "max": 21409
+  },
+  "vote_thresholds": {
+    "1": {
+      "reviews": 239593,
+      "fraction_of_all_reviews": 0.5266347364881053
+    },
+    "3": {
+      "reviews": 100031,
+      "fraction_of_all_reviews": 0.21987203017467816
+    },
+    "5": {
+      "reviews": 54444,
+      "fraction_of_all_reviews": 0.11967003039887812
+    },
+    "10": {
+      "reviews": 20345,
+      "fraction_of_all_reviews": 0.04471910161753683
+    },
+    "20": {
+      "reviews": 6438,
+      "fraction_of_all_reviews": 0.014150974500550608
+    }
+  },
+  "helpfulness_by_extremity": {
+    "0": {
+      "review_count": 19418,
+      "mean_rate": 0.6262419764929357,
+      "median_rate": 0.75
+    },
+    "1": {
+      "review_count": 46231,
+      "mean_rate": 0.7168656640520061,
+      "median_rate": 1.0
+    },
+    "2": {
+      "review_count": 173944,
+      "mean_rate": 0.8103300276594855,
+      "median_rate": 1.0
+    }
+  },
+  "figure_captions": {
+    "eda_01_rating_distribution.png": "Rating 5 is the most common, representing 63.9% of reviews; rating imbalance should be considered when comparing groups.",
+    "eda_02_helpfulness_by_rating.png": "The lowest observed mean rate is for rating 1 (0.540) and the highest is for rating 5 (0.872); this is descriptive and does not establish causation.",
+    "eda_03_review_length_distribution.png": "Review length has a median of 302 characters and a 95th percentile of 1203, illustrating the spread between typical and long reviews.",
+    "eda_04_helpfulness_by_review_length.png": "The longest-review group has a mean helpfulness rate 0.098 higher than the shortest-review group; intermediate groups should be examined for nonlinear patterns.",
+    "eda_05_helpfulness_vote_counts.png": "The median vote count is 2; 37.7% of valid-rate reviews have only one vote. Rates based on different vote counts have different precision.",
+    "eda_06_helpfulness_by_rating_extremity.png": "Reviews at extremity 2 have a mean helpfulness rate 0.184 higher than reviews at extremity 0; a formal test is needed to assess the pre-specified directional hypothesis."
+  },
+  "interval_note": "Plotted intervals are approximate row-level 95% intervals. They are descriptive, not cluster-adjusted confirmatory inference. Formal tests must account for the analysis design."
+}

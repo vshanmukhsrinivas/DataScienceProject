@@ -1,0 +1,11 @@
+{
+  "input": "data/processed/finefoods_cleaned.csv.gz",
+  "rows_checked": 568173,
+  "exact_duplicate_rows_before_normalization": 0,
+  "duplicate_rows_after_whitespace_normalization": 0,
+  "additional_duplicates_revealed_by_normalization": 0,
+  "rows_participating_in_normalized_duplicate_groups": 0,
+  "cross_product_repeated_text_groups": 57464,
+  "sample_normalized_duplicate_rows": [],
+  "policy": "Audit only. No rows were removed or overwritten by this script. Repeated text across products is not automatically considered a duplicate."
+}

@@ -1,0 +1,28 @@
+{
+  "analysis": "Test 1 sensitivity: product-grouped GEE",
+  "dataset": "data/splits/exploration.csv.gz",
+  "n_reviews": 239593,
+  "n_products": 39522,
+  "method": "Binomial GEE, independence working correlation, vote-count weights, robust covariance",
+  "hypotheses": {
+    "H0": "beta_RatingExtremity = 0",
+    "H1": "beta_RatingExtremity > 0"
+  },
+  "alpha": 0.05,
+  "coefficient": 0.34937724420782745,
+  "robust_standard_error": 0.0130866045429035,
+  "z_statistic": 26.697318090603186,
+  "p_value_one_sided": 2.5283406089957242e-157,
+  "coefficient_95_ci": [
+    0.32372797062381836,
+    0.37502651779183654
+  ],
+  "odds_ratio_per_extremity_unit": 1.418184091175551,
+  "odds_ratio_95_ci": [
+    1.3822712375883437,
+    1.4550299982892327
+  ],
+  "decision": "Reject H0",
+  "converged": true,
+  "caution": "GEE is a sensitivity analysis, not a complete solution to all possible overdispersion or model misspecification. Vote-count weighting and the working correlation assumption should be documented."
+}

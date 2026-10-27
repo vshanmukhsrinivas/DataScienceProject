@@ -1,0 +1,35 @@
+{
+  "dataset": "data/splits/exploration.csv.gz",
+  "analysis": "Test 1: rating extremity",
+  "n_reviews": 239593,
+  "n_products": 39522,
+  "total_helpful_votes": 802496,
+  "total_unhelpful_votes": 223816,
+  "alpha": 0.05,
+  "alternative": "beta_RatingExtremity > 0",
+  "test": "Binomial GLM, logit link, product-clustered standard errors",
+  "coefficient": 0.34937724420782773,
+  "cluster_robust_standard_error": 0.013086879350552562,
+  "z_statistic": 26.696757481230705,
+  "degrees_of_freedom": null,
+  "p_value_one_sided": 2.56651963067222e-157,
+  "p_value_note": "Asymptotic normal approximation for cluster-robust z statistic.",
+  "odds_ratio_per_extremity_unit": 1.4181840911755512,
+  "odds_ratio_95_ci": [
+    1.3822704930791554,
+    1.4550307819876547
+  ],
+  "coefficient_95_ci": [
+    0.3237274320107238,
+    0.37502705640493167
+  ],
+  "practical_threshold_odds_ratio": 1.05,
+  "practical_threshold_log_coefficient": 0.04879016416943205,
+  "nominal_decision": "Reject H0",
+  "practical_threshold_reached_by_point_estimate": true,
+  "pearson_chi_square": 507832.32367235085,
+  "residual_degrees_of_freedom": 239588.0,
+  "pearson_dispersion_ratio": 2.1196066734241734,
+  "convergence": true,
+  "caution": "Review-level vote proportions may be overdispersed. Cluster-robust standard errors account for product clustering but do not by themselves solve all model misspecification. Review diagnostics before treating inference as final."
+}
